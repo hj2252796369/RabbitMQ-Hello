@@ -21,7 +21,6 @@ public class Worker {
 
         String name = args[0];
 
-
         System.out.println(name + " 准备接受消息......");
 
         /**
@@ -37,8 +36,5 @@ public class Worker {
         }, (consumerTag)->{
             System.out.println("消息接收失败");
         });
-
-
-
     }
 }

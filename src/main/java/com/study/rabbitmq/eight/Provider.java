@@ -31,8 +31,5 @@ public class Provider {
             System.out.println("发送消息.." + msg);
             channel.basicPublish(NORMAL_EXCHANGE, NORMAL_ROUTING_KEY, properties, msg.getBytes());
         }
-
-
-
     }
 }

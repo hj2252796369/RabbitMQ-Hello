@@ -42,7 +42,7 @@ public class Customer01 {
         argsParam.put("x-dead-letter-routing-key", DEAD_ROUTING_KEY);
         argsParam.put("x-dead-letter-routing-key", DEAD_ROUTING_KEY);
         // 设置队列最大长度
-//        argsParam.put("x-max-length", 6);
+        argsParam.put("x-max-length", 6);
 //        argsParam.put("x-message-ttl", 100000);
 
         channel.queueDeclare(NORMAL_QUEUE, false, false, false, argsParam);

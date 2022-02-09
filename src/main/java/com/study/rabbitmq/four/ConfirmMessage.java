@@ -26,7 +26,7 @@ public class ConfirmMessage {
 
 //      pushMessageBatchConfirm();   // 消耗时间：159   155   143
 
-        pushMessageAsyn();
+        pushMessageAsyn();          // 消耗时间： 51  70  59
 
     }
 
@@ -83,6 +83,10 @@ public class ConfirmMessage {
         System.out.println("消耗时间：" + (end - start));
     }
 
+    /**
+     * 异步发布确认
+     * @throws Exception
+     */
     public static void pushMessageAsyn() throws Exception {
         Channel channel = RabbitMQFactory.getChannel();
 
